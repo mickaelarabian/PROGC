@@ -1,0 +1,181 @@
+\hypertarget{stack_8h}{}\doxysection{stack.\+h File Reference}
+\label{stack_8h}\index{stack.h@{stack.h}}
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+Include dependency graph for stack.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structStack}{Stack}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{stack_8h_a453f07a53194584fd2e0bb720c814c25}{S\+T\+A\+C\+K\+\_\+\+M\+A\+X\+\_\+\+S\+I\+ZE}}~100
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{stack_8h_ae9d651d70562e77fa39681ccc4993bbf}{init\+\_\+stack}} (\mbox{\hyperlink{structStack}{Stack}} $\ast$s)
+\begin{DoxyCompactList}\small\item\em La fonction init\+\_\+stack permet d\textquotesingle{}initialiser la pile à 0. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{stack_8h_abf5d30afcf64384fd5ea8c3caf3f9801}{push}} (\mbox{\hyperlink{structStack}{Stack}} $\ast$s, float value)
+\begin{DoxyCompactList}\small\item\em La fonction push permet d\textquotesingle{}ajouter un element au dessus de la pile. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{stack_8h_a5976020301a8830c6541de1866c2891d}{pop}} (\mbox{\hyperlink{structStack}{Stack}} $\ast$s)
+\begin{DoxyCompactList}\small\item\em La fonction pop permet de retirer le dernier element ajouté à la pile. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{stack_8h_a18db937ce50647114171ae4b28676188}{is\+\_\+stack\+\_\+empty}} (\mbox{\hyperlink{structStack}{Stack}} $\ast$s)
+\begin{DoxyCompactList}\small\item\em La fonction is\+\_\+stack\+\_\+empty vérfie si la pile est vide ou pas. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{stack_8h_ac57a63c4c8774196cc2f12cf3b2ba24f}{peek}} (\mbox{\hyperlink{structStack}{Stack}} $\ast$s)
+\begin{DoxyCompactList}\small\item\em La fonction peek permet de récupérer l\textquotesingle{}element au sommet de la pile non sans le supprimer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{stack_8h_a5df3fde62e5dca9a0e26ad20fe3261f3}{dup}} (\mbox{\hyperlink{structStack}{Stack}} $\ast$s)
+\begin{DoxyCompactList}\small\item\em La fonction dup duplique le sommet de la pile. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{stack_8h_aa27246b3c1dec5924712f4bc1f325621}{swap}} (\mbox{\hyperlink{structStack}{Stack}} $\ast$s)
+\begin{DoxyCompactList}\small\item\em La fonction swap permet d\textquotesingle{}échanger la position des éléments se trouvant aux sommets de la pile. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{stack_8h_a5aed2642dee126261be5f402645e87c8}{clear\+\_\+stack}} (\mbox{\hyperlink{structStack}{Stack}} $\ast$s)
+\begin{DoxyCompactList}\small\item\em La fonction clear\+\_\+stack permet de vider la pile. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{stack_8h_a453f07a53194584fd2e0bb720c814c25}\label{stack_8h_a453f07a53194584fd2e0bb720c814c25}} 
+\index{stack.h@{stack.h}!STACK\_MAX\_SIZE@{STACK\_MAX\_SIZE}}
+\index{STACK\_MAX\_SIZE@{STACK\_MAX\_SIZE}!stack.h@{stack.h}}
+\doxysubsubsection{\texorpdfstring{STACK\_MAX\_SIZE}{STACK\_MAX\_SIZE}}
+{\footnotesize\ttfamily \#define S\+T\+A\+C\+K\+\_\+\+M\+A\+X\+\_\+\+S\+I\+ZE~100}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{stack_8h_a5aed2642dee126261be5f402645e87c8}\label{stack_8h_a5aed2642dee126261be5f402645e87c8}} 
+\index{stack.h@{stack.h}!clear\_stack@{clear\_stack}}
+\index{clear\_stack@{clear\_stack}!stack.h@{stack.h}}
+\doxysubsubsection{\texorpdfstring{clear\_stack()}{clear\_stack()}}
+{\footnotesize\ttfamily void clear\+\_\+stack (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structStack}{Stack}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+La fonction clear\+\_\+stack permet de vider la pile. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{stack_8h_a5df3fde62e5dca9a0e26ad20fe3261f3}\label{stack_8h_a5df3fde62e5dca9a0e26ad20fe3261f3}} 
+\index{stack.h@{stack.h}!dup@{dup}}
+\index{dup@{dup}!stack.h@{stack.h}}
+\doxysubsubsection{\texorpdfstring{dup()}{dup()}}
+{\footnotesize\ttfamily void dup (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structStack}{Stack}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+La fonction dup duplique le sommet de la pile. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{stack_8h_ae9d651d70562e77fa39681ccc4993bbf}\label{stack_8h_ae9d651d70562e77fa39681ccc4993bbf}} 
+\index{stack.h@{stack.h}!init\_stack@{init\_stack}}
+\index{init\_stack@{init\_stack}!stack.h@{stack.h}}
+\doxysubsubsection{\texorpdfstring{init\_stack()}{init\_stack()}}
+{\footnotesize\ttfamily void init\+\_\+stack (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structStack}{Stack}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+La fonction init\+\_\+stack permet d\textquotesingle{}initialiser la pile à 0. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{stack_8h_a18db937ce50647114171ae4b28676188}\label{stack_8h_a18db937ce50647114171ae4b28676188}} 
+\index{stack.h@{stack.h}!is\_stack\_empty@{is\_stack\_empty}}
+\index{is\_stack\_empty@{is\_stack\_empty}!stack.h@{stack.h}}
+\doxysubsubsection{\texorpdfstring{is\_stack\_empty()}{is\_stack\_empty()}}
+{\footnotesize\ttfamily bool is\+\_\+stack\+\_\+empty (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structStack}{Stack}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+La fonction is\+\_\+stack\+\_\+empty vérfie si la pile est vide ou pas. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{stack_8h_ac57a63c4c8774196cc2f12cf3b2ba24f}\label{stack_8h_ac57a63c4c8774196cc2f12cf3b2ba24f}} 
+\index{stack.h@{stack.h}!peek@{peek}}
+\index{peek@{peek}!stack.h@{stack.h}}
+\doxysubsubsection{\texorpdfstring{peek()}{peek()}}
+{\footnotesize\ttfamily float peek (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structStack}{Stack}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+La fonction peek permet de récupérer l\textquotesingle{}element au sommet de la pile non sans le supprimer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float 
+\end{DoxyReturn}
+\mbox{\Hypertarget{stack_8h_a5976020301a8830c6541de1866c2891d}\label{stack_8h_a5976020301a8830c6541de1866c2891d}} 
+\index{stack.h@{stack.h}!pop@{pop}}
+\index{pop@{pop}!stack.h@{stack.h}}
+\doxysubsubsection{\texorpdfstring{pop()}{pop()}}
+{\footnotesize\ttfamily float pop (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structStack}{Stack}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+La fonction pop permet de retirer le dernier element ajouté à la pile. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float 
+\end{DoxyReturn}
+\mbox{\Hypertarget{stack_8h_abf5d30afcf64384fd5ea8c3caf3f9801}\label{stack_8h_abf5d30afcf64384fd5ea8c3caf3f9801}} 
+\index{stack.h@{stack.h}!push@{push}}
+\index{push@{push}!stack.h@{stack.h}}
+\doxysubsubsection{\texorpdfstring{push()}{push()}}
+{\footnotesize\ttfamily void push (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structStack}{Stack}} $\ast$}]{s,  }\item[{float}]{value }\end{DoxyParamCaption})}
+
+
+
+La fonction push permet d\textquotesingle{}ajouter un element au dessus de la pile. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \\
+\hline
+{\em value} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{stack_8h_aa27246b3c1dec5924712f4bc1f325621}\label{stack_8h_aa27246b3c1dec5924712f4bc1f325621}} 
+\index{stack.h@{stack.h}!swap@{swap}}
+\index{swap@{swap}!stack.h@{stack.h}}
+\doxysubsubsection{\texorpdfstring{swap()}{swap()}}
+{\footnotesize\ttfamily void swap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structStack}{Stack}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+La fonction swap permet d\textquotesingle{}échanger la position des éléments se trouvant aux sommets de la pile. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \\
+\hline
+\end{DoxyParams}

@@ -1,0 +1,174 @@
+\hypertarget{heap_8c}{}\doxysection{heap.\+c File Reference}
+\label{heap_8c}\index{heap.c@{heap.c}}
+{\ttfamily \#include \char`\"{}heap.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stddef.\+h$>$}\newline
+Include dependency graph for heap.\+c\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{heap_8c_ab43d0eafaa5ff8ac2dba0657750fdf4c}{init\+\_\+heap}} (\mbox{\hyperlink{structHeap}{Heap}} $\ast$h)
+\begin{DoxyCompactList}\small\item\em La fonction init\+\_\+heap permet d\textquotesingle{}initialiser le tas à 0. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{heap_8c_a85f425d55995d4bfe7d42a8317fcbedc}{is\+\_\+heap\+\_\+empty}} (\mbox{\hyperlink{structHeap}{Heap}} $\ast$h)
+\begin{DoxyCompactList}\small\item\em La fonction is\+\_\+heap\+\_\+empty permet de vérifier si le tas est vide ou pas. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{heap_8c_a9522d3476ad97c341585c4dd3fd9eb01}{pop\+\_\+heap}} (\mbox{\hyperlink{structHeap}{Heap}} $\ast$h)
+\begin{DoxyCompactList}\small\item\em La fonction pop\+\_\+heap permet de recupérer l\textquotesingle{}element root. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{heap_8c_af9b4814c7eb4fd7f934e9836e1016d95}{push\+\_\+heap}} (\mbox{\hyperlink{structHeap}{Heap}} $\ast$h, float value)
+\begin{DoxyCompactList}\small\item\em La fonction push\+\_\+heap permet d\textquotesingle{}ajouter un element au tas. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{heap_8c_a54c0ba5c00a105a220a161ec717208a7}{replace}} (\mbox{\hyperlink{structHeap}{Heap}} $\ast$h, float value)
+\begin{DoxyCompactList}\small\item\em La fonction replace permet de remplacer l\textquotesingle{}element root par un nouvel element. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{heap_8c_a6dd0912685947a8f652bc357f4e22fe8}{peek\+\_\+heap}} (\mbox{\hyperlink{structHeap}{Heap}} $\ast$h)
+\begin{DoxyCompactList}\small\item\em La fonction peek\+\_\+heap permet de retourner l\textquotesingle{}élément root sans l\textquotesingle{}enlever. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{heap_8c_a35652f605323d6758b07336f48258e50}{merge}} (\mbox{\hyperlink{structHeap}{Heap}} $\ast$dest, \mbox{\hyperlink{structHeap}{Heap}} $\ast$src)
+\begin{DoxyCompactList}\small\item\em La fonction merge permet de fusionné un tas source sur un tas de destination. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{heap_8c_a3cb001b6c51f77b2c633171bb3aab115}{heapify}} (\mbox{\hyperlink{structHeap}{Heap}} $\ast$s, float array\mbox{[}$\,$\mbox{]}, size\+\_\+t array\+\_\+size)
+\begin{DoxyCompactList}\small\item\em La fonction heapify permet de créer un tas à partir d\textquotesingle{}un taleau. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{heap_8c_a3cb001b6c51f77b2c633171bb3aab115}\label{heap_8c_a3cb001b6c51f77b2c633171bb3aab115}} 
+\index{heap.c@{heap.c}!heapify@{heapify}}
+\index{heapify@{heapify}!heap.c@{heap.c}}
+\doxysubsubsection{\texorpdfstring{heapify()}{heapify()}}
+{\footnotesize\ttfamily void heapify (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structHeap}{Heap}} $\ast$}]{s,  }\item[{float}]{array\mbox{[}$\,$\mbox{]},  }\item[{size\+\_\+t}]{array\+\_\+size }\end{DoxyParamCaption})}
+
+
+
+La fonction heapify permet de créer un tas à partir d\textquotesingle{}un taleau. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \\
+\hline
+{\em array} & \\
+\hline
+{\em array\+\_\+size} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{heap_8c_ab43d0eafaa5ff8ac2dba0657750fdf4c}\label{heap_8c_ab43d0eafaa5ff8ac2dba0657750fdf4c}} 
+\index{heap.c@{heap.c}!init\_heap@{init\_heap}}
+\index{init\_heap@{init\_heap}!heap.c@{heap.c}}
+\doxysubsubsection{\texorpdfstring{init\_heap()}{init\_heap()}}
+{\footnotesize\ttfamily void init\+\_\+heap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structHeap}{Heap}} $\ast$}]{h }\end{DoxyParamCaption})}
+
+
+
+La fonction init\+\_\+heap permet d\textquotesingle{}initialiser le tas à 0. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em h} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{heap_8c_a85f425d55995d4bfe7d42a8317fcbedc}\label{heap_8c_a85f425d55995d4bfe7d42a8317fcbedc}} 
+\index{heap.c@{heap.c}!is\_heap\_empty@{is\_heap\_empty}}
+\index{is\_heap\_empty@{is\_heap\_empty}!heap.c@{heap.c}}
+\doxysubsubsection{\texorpdfstring{is\_heap\_empty()}{is\_heap\_empty()}}
+{\footnotesize\ttfamily bool is\+\_\+heap\+\_\+empty (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structHeap}{Heap}} $\ast$}]{h }\end{DoxyParamCaption})}
+
+
+
+La fonction is\+\_\+heap\+\_\+empty permet de vérifier si le tas est vide ou pas. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em h} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{heap_8c_a35652f605323d6758b07336f48258e50}\label{heap_8c_a35652f605323d6758b07336f48258e50}} 
+\index{heap.c@{heap.c}!merge@{merge}}
+\index{merge@{merge}!heap.c@{heap.c}}
+\doxysubsubsection{\texorpdfstring{merge()}{merge()}}
+{\footnotesize\ttfamily void merge (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structHeap}{Heap}} $\ast$}]{dest,  }\item[{\mbox{\hyperlink{structHeap}{Heap}} $\ast$}]{src }\end{DoxyParamCaption})}
+
+
+
+La fonction merge permet de fusionné un tas source sur un tas de destination. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dest} & \\
+\hline
+{\em src} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{heap_8c_a6dd0912685947a8f652bc357f4e22fe8}\label{heap_8c_a6dd0912685947a8f652bc357f4e22fe8}} 
+\index{heap.c@{heap.c}!peek\_heap@{peek\_heap}}
+\index{peek\_heap@{peek\_heap}!heap.c@{heap.c}}
+\doxysubsubsection{\texorpdfstring{peek\_heap()}{peek\_heap()}}
+{\footnotesize\ttfamily float peek\+\_\+heap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structHeap}{Heap}} $\ast$}]{h }\end{DoxyParamCaption})}
+
+
+
+La fonction peek\+\_\+heap permet de retourner l\textquotesingle{}élément root sans l\textquotesingle{}enlever. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em h} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float 
+\end{DoxyReturn}
+\mbox{\Hypertarget{heap_8c_a9522d3476ad97c341585c4dd3fd9eb01}\label{heap_8c_a9522d3476ad97c341585c4dd3fd9eb01}} 
+\index{heap.c@{heap.c}!pop\_heap@{pop\_heap}}
+\index{pop\_heap@{pop\_heap}!heap.c@{heap.c}}
+\doxysubsubsection{\texorpdfstring{pop\_heap()}{pop\_heap()}}
+{\footnotesize\ttfamily float pop\+\_\+heap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structHeap}{Heap}} $\ast$}]{h }\end{DoxyParamCaption})}
+
+
+
+La fonction pop\+\_\+heap permet de recupérer l\textquotesingle{}element root. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em h} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float 
+\end{DoxyReturn}
+\mbox{\Hypertarget{heap_8c_af9b4814c7eb4fd7f934e9836e1016d95}\label{heap_8c_af9b4814c7eb4fd7f934e9836e1016d95}} 
+\index{heap.c@{heap.c}!push\_heap@{push\_heap}}
+\index{push\_heap@{push\_heap}!heap.c@{heap.c}}
+\doxysubsubsection{\texorpdfstring{push\_heap()}{push\_heap()}}
+{\footnotesize\ttfamily void push\+\_\+heap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structHeap}{Heap}} $\ast$}]{h,  }\item[{float}]{value }\end{DoxyParamCaption})}
+
+
+
+La fonction push\+\_\+heap permet d\textquotesingle{}ajouter un element au tas. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em h} & \\
+\hline
+{\em value} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{heap_8c_a54c0ba5c00a105a220a161ec717208a7}\label{heap_8c_a54c0ba5c00a105a220a161ec717208a7}} 
+\index{heap.c@{heap.c}!replace@{replace}}
+\index{replace@{replace}!heap.c@{heap.c}}
+\doxysubsubsection{\texorpdfstring{replace()}{replace()}}
+{\footnotesize\ttfamily float replace (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structHeap}{Heap}} $\ast$}]{h,  }\item[{float}]{value }\end{DoxyParamCaption})}
+
+
+
+La fonction replace permet de remplacer l\textquotesingle{}element root par un nouvel element. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em h} & \\
+\hline
+{\em value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float 
+\end{DoxyReturn}

@@ -1,0 +1,5 @@
+cd eclipse-workspace
+cd TP1/src/
+gcc TP.c
+./a.out
+

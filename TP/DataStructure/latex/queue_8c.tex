@@ -1,0 +1,129 @@
+\hypertarget{queue_8c}{}\doxysection{queue.\+c File Reference}
+\label{queue_8c}\index{queue.c@{queue.c}}
+{\ttfamily \#include \char`\"{}queue.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+Include dependency graph for queue.\+c\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{queue_8c_a25919c655a65e609b77096197881ec15}{init\+\_\+queue}} (\mbox{\hyperlink{structQueue}{Queue}} $\ast$q)
+\begin{DoxyCompactList}\small\item\em La fonction init\+\_\+queue permet d\textquotesingle{}initialiser la file à 0. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{queue_8c_aee4cdc64e4fb038915201bb5f481dcc0}{enqueue}} (\mbox{\hyperlink{structQueue}{Queue}} $\ast$q, float value)
+\begin{DoxyCompactList}\small\item\em La fonction enqueue permet d\textquotesingle{}ajouter un élément à l\textquotesingle{}entrée de la file. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{queue_8c_a963c35fdb8a91292169e3c65dfa6b56b}{dequeue}} (\mbox{\hyperlink{structQueue}{Queue}} $\ast$q)
+\begin{DoxyCompactList}\small\item\em La fonction enqueue permet de retirer un element de la liste par la sortie. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{queue_8c_a813806bdcfc85411e001285c7607f3ef}{is\+\_\+queue\+\_\+empty}} (\mbox{\hyperlink{structQueue}{Queue}} $\ast$q)
+\begin{DoxyCompactList}\small\item\em La fonction is\+\_\+queue\+\_\+empty vérifie si la file est vide ou pas. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{queue_8c_a0285b50c50dd0dcc29b712684d2569c7}{front}} (\mbox{\hyperlink{structQueue}{Queue}} $\ast$q)
+\begin{DoxyCompactList}\small\item\em La fonction front permet de récupérer l\textquotesingle{}element à la sortie sans le retirer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{queue_8c_a119efee68b4d232dd411a5ca2ca3327b}{clear\+\_\+queue}} (\mbox{\hyperlink{structQueue}{Queue}} $\ast$q)
+\begin{DoxyCompactList}\small\item\em La fonction clear permet de vider la file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{queue_8c_a119efee68b4d232dd411a5ca2ca3327b}\label{queue_8c_a119efee68b4d232dd411a5ca2ca3327b}} 
+\index{queue.c@{queue.c}!clear\_queue@{clear\_queue}}
+\index{clear\_queue@{clear\_queue}!queue.c@{queue.c}}
+\doxysubsubsection{\texorpdfstring{clear\_queue()}{clear\_queue()}}
+{\footnotesize\ttfamily void clear\+\_\+queue (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structQueue}{Queue}} $\ast$}]{q }\end{DoxyParamCaption})}
+
+
+
+La fonction clear permet de vider la file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em q} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{queue_8c_a963c35fdb8a91292169e3c65dfa6b56b}\label{queue_8c_a963c35fdb8a91292169e3c65dfa6b56b}} 
+\index{queue.c@{queue.c}!dequeue@{dequeue}}
+\index{dequeue@{dequeue}!queue.c@{queue.c}}
+\doxysubsubsection{\texorpdfstring{dequeue()}{dequeue()}}
+{\footnotesize\ttfamily float dequeue (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structQueue}{Queue}} $\ast$}]{q }\end{DoxyParamCaption})}
+
+
+
+La fonction enqueue permet de retirer un element de la liste par la sortie. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em q} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float 
+\end{DoxyReturn}
+\mbox{\Hypertarget{queue_8c_aee4cdc64e4fb038915201bb5f481dcc0}\label{queue_8c_aee4cdc64e4fb038915201bb5f481dcc0}} 
+\index{queue.c@{queue.c}!enqueue@{enqueue}}
+\index{enqueue@{enqueue}!queue.c@{queue.c}}
+\doxysubsubsection{\texorpdfstring{enqueue()}{enqueue()}}
+{\footnotesize\ttfamily void enqueue (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structQueue}{Queue}} $\ast$}]{q,  }\item[{float}]{value }\end{DoxyParamCaption})}
+
+
+
+La fonction enqueue permet d\textquotesingle{}ajouter un élément à l\textquotesingle{}entrée de la file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em q} & \\
+\hline
+{\em value} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{queue_8c_a0285b50c50dd0dcc29b712684d2569c7}\label{queue_8c_a0285b50c50dd0dcc29b712684d2569c7}} 
+\index{queue.c@{queue.c}!front@{front}}
+\index{front@{front}!queue.c@{queue.c}}
+\doxysubsubsection{\texorpdfstring{front()}{front()}}
+{\footnotesize\ttfamily float front (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structQueue}{Queue}} $\ast$}]{q }\end{DoxyParamCaption})}
+
+
+
+La fonction front permet de récupérer l\textquotesingle{}element à la sortie sans le retirer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em q} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float 
+\end{DoxyReturn}
+\mbox{\Hypertarget{queue_8c_a25919c655a65e609b77096197881ec15}\label{queue_8c_a25919c655a65e609b77096197881ec15}} 
+\index{queue.c@{queue.c}!init\_queue@{init\_queue}}
+\index{init\_queue@{init\_queue}!queue.c@{queue.c}}
+\doxysubsubsection{\texorpdfstring{init\_queue()}{init\_queue()}}
+{\footnotesize\ttfamily void init\+\_\+queue (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structQueue}{Queue}} $\ast$}]{q }\end{DoxyParamCaption})}
+
+
+
+La fonction init\+\_\+queue permet d\textquotesingle{}initialiser la file à 0. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em q} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{queue_8c_a813806bdcfc85411e001285c7607f3ef}\label{queue_8c_a813806bdcfc85411e001285c7607f3ef}} 
+\index{queue.c@{queue.c}!is\_queue\_empty@{is\_queue\_empty}}
+\index{is\_queue\_empty@{is\_queue\_empty}!queue.c@{queue.c}}
+\doxysubsubsection{\texorpdfstring{is\_queue\_empty()}{is\_queue\_empty()}}
+{\footnotesize\ttfamily bool is\+\_\+queue\+\_\+empty (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structQueue}{Queue}} $\ast$}]{q }\end{DoxyParamCaption})}
+
+
+
+La fonction is\+\_\+queue\+\_\+empty vérifie si la file est vide ou pas. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em q} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}

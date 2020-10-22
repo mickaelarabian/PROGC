@@ -1,0 +1,132 @@
+\hypertarget{array__list_8c}{}\doxysection{array\+\_\+list.\+c File Reference}
+\label{array__list_8c}\index{array\_list.c@{array\_list.c}}
+{\ttfamily \#include \char`\"{}array\+\_\+list.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+Include dependency graph for array\+\_\+list.\+c\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{array__list_8c_a6ec00aaed68440b991b26dd13fec510c}{init\+\_\+array\+\_\+list}} (\mbox{\hyperlink{structArray__list}{Array\+\_\+list}} $\ast$l)
+\begin{DoxyCompactList}\small\item\em La fonction init\+\_\+array\+\_\+list permet d\textquotesingle{}initialiser la liste à 0. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{array__list_8c_ade6797971e903ae5baf44e7bde807bbd}{insert\+\_\+at}} (\mbox{\hyperlink{structArray__list}{Array\+\_\+list}} $\ast$l, int position, float value)
+\begin{DoxyCompactList}\small\item\em La fonction insert\+\_\+at permet d\textquotesingle{}insérer un élément dans la liste à une position donnée. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{array__list_8c_ae5e4ec918c6b6997d6b04ef540d56d3a}{add}} (\mbox{\hyperlink{structArray__list}{Array\+\_\+list}} $\ast$l, float value)
+\begin{DoxyCompactList}\small\item\em La fonction add permet d\textquotesingle{}ajouer un element dans la liste. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{array__list_8c_a3916b04721e25076e491304d7ea7e3ce}{remove\+\_\+at}} (\mbox{\hyperlink{structArray__list}{Array\+\_\+list}} $\ast$l, int position)
+\begin{DoxyCompactList}\small\item\em La fonction remove\+\_\+at permet de supprimer un élément à une position donnée. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{array__list_8c_a9983c477beb4bf5e1edd69acaf650dd6}{get\+\_\+at}} (\mbox{\hyperlink{structArray__list}{Array\+\_\+list}} $\ast$l, int position)
+\begin{DoxyCompactList}\small\item\em La fonction get\+\_\+at permet de récupérer l\textquotesingle{}élément d\textquotesingle{}une position donnée. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{array__list_8c_a8b519bf3d3bbb8caf9900a1d51ca0fc1}{clear\+\_\+array\+\_\+list}} (\mbox{\hyperlink{structArray__list}{Array\+\_\+list}} $\ast$l)
+\begin{DoxyCompactList}\small\item\em La fonction clear permet de vider la liste. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{array__list_8c_ae5e4ec918c6b6997d6b04ef540d56d3a}\label{array__list_8c_ae5e4ec918c6b6997d6b04ef540d56d3a}} 
+\index{array\_list.c@{array\_list.c}!add@{add}}
+\index{add@{add}!array\_list.c@{array\_list.c}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily void add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structArray__list}{Array\+\_\+list}} $\ast$}]{l,  }\item[{float}]{value }\end{DoxyParamCaption})}
+
+
+
+La fonction add permet d\textquotesingle{}ajouer un element dans la liste. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em l} & \\
+\hline
+{\em value} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{array__list_8c_a8b519bf3d3bbb8caf9900a1d51ca0fc1}\label{array__list_8c_a8b519bf3d3bbb8caf9900a1d51ca0fc1}} 
+\index{array\_list.c@{array\_list.c}!clear\_array\_list@{clear\_array\_list}}
+\index{clear\_array\_list@{clear\_array\_list}!array\_list.c@{array\_list.c}}
+\doxysubsubsection{\texorpdfstring{clear\_array\_list()}{clear\_array\_list()}}
+{\footnotesize\ttfamily void clear\+\_\+array\+\_\+list (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structArray__list}{Array\+\_\+list}} $\ast$}]{l }\end{DoxyParamCaption})}
+
+
+
+La fonction clear permet de vider la liste. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em l} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{array__list_8c_a9983c477beb4bf5e1edd69acaf650dd6}\label{array__list_8c_a9983c477beb4bf5e1edd69acaf650dd6}} 
+\index{array\_list.c@{array\_list.c}!get\_at@{get\_at}}
+\index{get\_at@{get\_at}!array\_list.c@{array\_list.c}}
+\doxysubsubsection{\texorpdfstring{get\_at()}{get\_at()}}
+{\footnotesize\ttfamily float get\+\_\+at (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structArray__list}{Array\+\_\+list}} $\ast$}]{l,  }\item[{int}]{position }\end{DoxyParamCaption})}
+
+
+
+La fonction get\+\_\+at permet de récupérer l\textquotesingle{}élément d\textquotesingle{}une position donnée. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em l} & \\
+\hline
+{\em position} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float 
+\end{DoxyReturn}
+\mbox{\Hypertarget{array__list_8c_a6ec00aaed68440b991b26dd13fec510c}\label{array__list_8c_a6ec00aaed68440b991b26dd13fec510c}} 
+\index{array\_list.c@{array\_list.c}!init\_array\_list@{init\_array\_list}}
+\index{init\_array\_list@{init\_array\_list}!array\_list.c@{array\_list.c}}
+\doxysubsubsection{\texorpdfstring{init\_array\_list()}{init\_array\_list()}}
+{\footnotesize\ttfamily void init\+\_\+array\+\_\+list (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structArray__list}{Array\+\_\+list}} $\ast$}]{l }\end{DoxyParamCaption})}
+
+
+
+La fonction init\+\_\+array\+\_\+list permet d\textquotesingle{}initialiser la liste à 0. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em l} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{array__list_8c_ade6797971e903ae5baf44e7bde807bbd}\label{array__list_8c_ade6797971e903ae5baf44e7bde807bbd}} 
+\index{array\_list.c@{array\_list.c}!insert\_at@{insert\_at}}
+\index{insert\_at@{insert\_at}!array\_list.c@{array\_list.c}}
+\doxysubsubsection{\texorpdfstring{insert\_at()}{insert\_at()}}
+{\footnotesize\ttfamily void insert\+\_\+at (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structArray__list}{Array\+\_\+list}} $\ast$}]{l,  }\item[{int}]{position,  }\item[{float}]{value }\end{DoxyParamCaption})}
+
+
+
+La fonction insert\+\_\+at permet d\textquotesingle{}insérer un élément dans la liste à une position donnée. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em l} & \\
+\hline
+{\em position} & \\
+\hline
+{\em value} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{array__list_8c_a3916b04721e25076e491304d7ea7e3ce}\label{array__list_8c_a3916b04721e25076e491304d7ea7e3ce}} 
+\index{array\_list.c@{array\_list.c}!remove\_at@{remove\_at}}
+\index{remove\_at@{remove\_at}!array\_list.c@{array\_list.c}}
+\doxysubsubsection{\texorpdfstring{remove\_at()}{remove\_at()}}
+{\footnotesize\ttfamily float remove\+\_\+at (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structArray__list}{Array\+\_\+list}} $\ast$}]{l,  }\item[{int}]{position }\end{DoxyParamCaption})}
+
+
+
+La fonction remove\+\_\+at permet de supprimer un élément à une position donnée. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em l} & \\
+\hline
+{\em position} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float 
+\end{DoxyReturn}
